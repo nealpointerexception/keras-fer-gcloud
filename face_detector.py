@@ -38,7 +38,7 @@ class Face_Cropper():
         score["Anger"] = weights[likelihood_name[face.anger_likelihood]]
         score["Sadness"] =weights[likelihood_name[face.sorrow_likelihood]]
 
-        print(score)
+        # print(score)
 
         im = im.crop((box[0][0], box[0][1], box[2][0], box[2][1]))
         return (im, score)
